@@ -1,0 +1,193 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A simple fluency checker and website to get language data.">
+  <meta name="keywords" content="Essay, Language, CEFR, Learning, Fluency, English">
+  <meta name="author" content="Rehan Raj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="narrow-jumbotron.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="icon" type="image/x-icon" href="https://thevirus-limiter.github.io/essay-writer/image.jpg">
+  <title>Essay Writer-writeit</title>
+  <style>
+    #toggle {
+      width: 100px;
+      height: 100px;
+      background: #ccc;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+
+    }
+
+    .container2 {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+  </style>
+  <script src="../bundle1.js" defer></script>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style type="text/css">
+    @font-face {
+      font-family: 'rbicon';
+      src: url(chrome-extension://dipiagiiohfljcicegpgffpbnjmgjcnf/fonts/rbicon.woff2) format("woff2");
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+</head>
+<div class="title">
+  <br>
+</div>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1091.0"
+  style="text-decoration-color: rgb(46, 46, 46); background-color: rgb(250, 250, 250); color: rgb(0, 0, 0);">
+  <script>var exports = {};</script>
+  <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+  <div class="container">
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills float-right">
+          <li class="nav-item">
+            <a class="nav-link active button button2" href="#">Fluency Checker<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./checker.html" id="a1">Language Data</a>
+          </li>
+
+        </ul>
+        <div class="container2">
+          <img src="../linguify.png" height="72.5" width="96.5">
+          <h3 class="text-muted"><b>linguify</b></h3>
+
+        </div>
+      </nav>
+    </div>
+
+    <div class="jumbotron" style="background: rgb(41,144,99);
+background: linear-gradient(90deg, rgba(41,144,99,1) 16%, rgba(18,208,121,1) 50%, rgba(41,144,99,1) 83%);">
+      <h8 class="display-3" style="width: 200x; text-decoration-color: rgb(0, 128, 255); color:aliceblue"><strong>Check
+          your language fluency</strong></h8>
+      <br>
+      <br>
+      <h1 class="lead" style="color:aliceblue">with just the click of a button!</h1>
+      <br>
+      <p><a class="btn btn-lg btn-success button button2" href="#form" role="button"
+          style="background:white; color:black;border:0ch" id="a2">Check your accuracy!</a></p>
+    </div>
+    <div id="form1" class="form-group">
+
+      <form id="frm1" target="dummyframe">
+        <p for="topic" class="text-center" style="font-size: x-large;">Write a short (25 words) essay in the
+          language you're learning!</p>
+        <p for="topic" class="text-center" style="font-size:medium">Latin-alphabet languages only, please.</p>
+        <textarea id="input1" rows="5" cols="60" type="textarea" class="form-control" placeholder="E.g: The United States of America is a very diverse country with a rich history and culture, along with a strong commitment to democracy and freedom.
+      " style="resize: none; align-items: center; align-self: center; align-content: center; width:600; position: absolute;
+      left: 50%;
+      transform: translateX(-50%);"></textarea>
+
+
+        <br><br><br><br><br><br>
+        <p class="text-center" style="font-size:large">
+          <b>Words:</b>
+          <span id="show">0</span><span id="show">/25</span>
+        </p>
+        <div id="buttons">
+          <input type="submit" id="startbutton" value="Check" class="btn btn-lg btn-success button button2" style="position: absolute;
+      left: 50%;
+      transform: translateX(-120%); border:none">
+          <button id="copyButton" class="btn btn-lg btn-success button button2" style="background-color:blue; border:0ch; position: absolute;
+        left: 50%;
+        transform: translateX(5%); display: inline-block;">Copy Score</button>
+        </div>
+      </form><br><br><br>
+      <div id="demo1">
+        <p id="demoT" class="text-center">
+          <span id="demo" class="text-center" style="font-size:80px"></span><span id="demo2" class="text-right"
+            style="font-size:30px"></span>
+          <br>
+          <span id="demo3" class="text-center" style="font-size:20px"></span><span id="demo4" class="text-center"
+            style="font-size:40px"></span>
+        </p>
+      </div>
+      <div>
+        <p class="text-center" style="font-size:xx-large"><b>What is CEFR?</b></p>
+        <p class="text-center" style="font-size:large">CEFR stands for The Common European Framework of Reference for
+          Languages and is a way to check your fluency in a language. This website uses the CEFR ratings to assess you
+          on your language skills. For more information, look at the images below this text from <a
+            href="https://www.duolingo.com/">Duolingo</a>.</p>
+        <br>
+        <img src="https://blog.duolingo.com/content/images/2020/02/CEFR-aligned-courses-1.png" width="657"
+          height="285.5" class="center">
+        <br>
+        <p class="text-center" style="font-size:xx-large"><b>How do you check CEFR?</b></p>
+        <p class="text-center" style="font-size:large">CEFR is usually checked by the amount of <a
+            href="https://languagelearning.stackexchange.com/questions/3061/what-are-estimates-of-vocabulary-size-for-each-cefr-level/3065#3065">active
+            and passive words</a> in a speaker's vocabulary. To learn more <a
+            href="https://www.fluentin3months.com/cefr-levels/">click here</a>. The below image from Duolingo will
+          explain a little more.</p>
+        <br>
+        <img src="https://blog.duolingo.com/content/images/2020/03/2020-02-CEFR-image.png" width="564.5" height="1026.5"
+          class="center">
+      </div>
+    </div>
+    <script>
+
+      document.getElementById("show").style.color = "darkred";
+
+      document
+        .querySelector("#input1")
+        .addEventListener("input", function countWord() {
+          let res = [];
+          let str = this.value.replace(/[\t\n\r\.\?\!]/gm, " ").split(" ");
+          str.map((s) => {
+            let trimStr = s.trim();
+            if (trimStr.length > 0) {
+              res.push(trimStr);
+            }
+          });
+          document.querySelector("#show").innerText = res.length;
+          if (res.length < 10) {
+            document.getElementById("show").style.color = "darkred";
+          }
+          if (res.length < 25 && res.length > 10) {
+            document.getElementById("show").style.color = "red";
+          }
+
+          else if (res.length >= 25) {
+            document.getElementById("show").style.color = "darkgreen";
+          }
+        });
+    </script>
+    <script>
+      $('#a1,#a2').click(function () {
+        $('#frm1').effect('highlight', {}, 1000);
+        // $('#demo1').effect('highlight',{},1000);
+        $('#buttons').effect('highlight', {}, 1000);
+      });
+
+    </script>
+    <script>
+
+    </script>
+
+    <footer class="footer">
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © Rehan Raj 2023 Copyright:
+        <a class="fw-bold" href="#">linguify</a>
+      </div>
+    </footer>
+</body>
